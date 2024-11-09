@@ -25,10 +25,10 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100">
+    <div className="min-h-screen w-full bg-gray-900 text-gray-100 overflow-x-hidden">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800 z-50">
-        <div className="max-w-6xl mx-auto px-6">
+      <nav className="fixed top-0 left-0 right-0 w-full bg-gray-900/80 backdrop-blur-sm border-b border-gray-800 z-50">
+        <div className="container max-w-6xl mx-auto px-4 md:px-6">
           <div className="flex items-center justify-between py-4">
             <span className="text-xl font-bold text-sky-400">Fareed.dev</span>
             <div className="flex gap-6">
@@ -43,8 +43,8 @@ const Portfolio = () => {
       </nav>
 
       {/* Header/Hero Section */}
-      <header className="pt-32 pb-20 px-6" id="about">
-        <div className="max-w-6xl mx-auto">
+      <header className="pt-32 pb-20 px-4 md:px-6 w-full" id="about">
+        <div className="container max-w-6xl mx-auto">
           <div className="space-y-6">
             <h1 className="text-5xl font-bold">Fareed Ahmad</h1>
             <h2 className="text-2xl text-sky-400">Software Developer</h2>
@@ -83,7 +83,7 @@ const Portfolio = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-6 space-y-24 pb-24">
+      <main className="container max-w-6xl mx-auto px-4 md:px-6 space-y-24 pb-24">
         {/* Projects Section */}
         <section id="projects" className="pt-16">
           <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
@@ -116,12 +116,12 @@ const Portfolio = () => {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="pt-16">
+        <section id="experience" className="pt-16 w-full">
           <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
             <Briefcase className="text-sky-400" />
             Experience
           </h2>
-          <div className="relative">
+          <div className="relative w-full">
             {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-px bg-gray-700" />
             
@@ -145,12 +145,12 @@ const Portfolio = () => {
         </section>
 
         {/* Education Section */}
-        <section id="education" className="pt-16">
+        <section id="education" className="pt-16 w-full">
           <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
             <BookOpen className="text-sky-400" />
             Education
           </h2>
-          <div className="relative space-y-6">
+          <div className="relative space-y-6 w-full">
             {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-px bg-gray-700" />
             
